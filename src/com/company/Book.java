@@ -8,8 +8,14 @@ public class Book {
 
 
      Author author = new Author();
+     Book(){
 
+     }
 
+     Book(String title,int availables){
+          this.title = "";
+          this.availables = 0;
+     }
 
      private double price;
 
