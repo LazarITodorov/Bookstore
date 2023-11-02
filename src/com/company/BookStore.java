@@ -13,5 +13,8 @@ public class BookStore {
 
 
     }
+    Bookstore store;
+    books = store.getBooks;
+    books.add(book);
 
 }

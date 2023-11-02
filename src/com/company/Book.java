@@ -8,16 +8,25 @@ public class Book {
 
      private double price;
 
-     Author author = new Author();
+     private Author author;
+
+     private BookType type;
+
      Book(){
-
+          author = new Author();
+          type = BookType.BOOK;
+          title = "";
+          availables = 0;
+          price = 0.0;
      }
-     BookType type = new BookType();
 
-     Book(String title,int availables, double price){
-          this.title = "";
-          this.availables = 0;
-          this.price = 0.0;
+
+     Book(String title,int availables, double price, Author author, BookType type){
+          this.title = title;
+          this.availables = availables;
+          this.price = price;
+          this.type = BookType.BOOK;
+          this.author = author;
      }
 
 
@@ -46,4 +55,6 @@ public class Book {
      public void setPrice(double price) {
           this.price = price;
      }
+
+
 }
