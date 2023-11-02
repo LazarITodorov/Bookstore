@@ -8,8 +8,8 @@ public class BookStore {
 
     sell(Book b){
         n=b.getAvailables();
-        b.setAvailables(n-1);
-
+        if(n>0) b.setAvailables(n-1);
+        else System.out.println("No more available books");
 
 
     }

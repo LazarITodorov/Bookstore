@@ -6,18 +6,21 @@ public class Book {
 
      private int availables;
 
+     private double price;
 
      Author author = new Author();
      Book(){
 
      }
+     BookType type = new BookType();
 
-     Book(String title,int availables){
+     Book(String title,int availables, double price){
           this.title = "";
           this.availables = 0;
+          this.price = 0.0;
      }
 
-     private double price;
+
 
      public String getTitle() {
           return title;
@@ -36,7 +39,8 @@ public class Book {
      }
 
      public double getPrice() {
-          return price;
+          System.out.println(title + "is on sale 70%");
+          return 7/10 * price;
      }
 
      public void setPrice(double price) {

@@ -4,10 +4,10 @@ public class ComicBook extends Book{
 
     private String characterName;
 
+    double orPrice = super.getPrice();
 
-
-    ComicBook(String title,int availables, String characterName){
-        super(title,availables);
+    ComicBook(String title,int availables, String characterName, double price){
+        super(title,availables,price);
         this.characterName = "";
     }
 
@@ -18,5 +18,6 @@ public class ComicBook extends Book{
     public void setCharacterName(String characterName) {
         this.characterName = characterName;
     }
+
 
 }

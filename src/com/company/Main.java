@@ -9,6 +9,15 @@ public class Main {
              int n = sc.nextInt();
 
              for(int i=1;i<=n;i++){
+                 Book book;
+                 switch(type){
+                     case CHILDREN_BOOK: book = new ChildrenBook();break;
+                     case COMIC_BOOK: book = new ComicBook();break;
+
+                 }
+
+
+
 
              }
 

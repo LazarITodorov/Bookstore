@@ -4,9 +4,10 @@ public class ChildrenBook extends Book{
 
     private int age;
 
+    double orPrice = super.getPrice();
 
-    ChildrenBook(String title,int availables,int age){
-        super(title,availables);
+    ChildrenBook(String title,int availables,int age, double price){
+        super(title,availables,price);
         this.age=0;
     }
 
